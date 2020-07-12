@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>ТЕГИ</h3>
+    <header><strong> HEADER </strong>Заголовок/Шапка</header>
+    <nav><strong> NAV </strong>Для меню</nav>
+    <div><strong> DIV </strong> Основной</div>
+
+    <div>
+        <h1><strong> h1 </strong> Содержимое тега</h1>
+        <h2><strong> h2 </strong> Содержимое тега</h2>
+        <h3><strong> h3 </strong> Содержимое тега</h3>
+        <h4><strong> h4 </strong> Содержимое тега</h4>
+        <h5><strong> h5 </strong> Содержимое тега</h5>
+        <h6><strong> h6 </strong> Содержимое тега</h6>
+    </div>
+    <div>
+        <span><strong> span </strong>Span блок</span>
+    </div>
+    <br />
+    <div>
+        <a target="_blank" href="ya.ru">Будет открыто в новой странице</a>
+    </div>
+    <br />
+    <div>
+        <img src="img/cover.jpg" alt="Ой картинки нет" />
+    </div>
+    <div>
+        <footer><strong> footer </strong>/Подвал</footer>
+    </div>
+    <div>
+        <strong> LI </strong>
+        <ul>
+            <li><strong> LI </strong></li>
+            <li>test li</li>
+            <li>test li</li>
+            <li>test li</li>
+        </ul>
+        <strong> OL </strong>
+
+        <ol>
+            <li><strong> LI </strong></li>
+            <li>test li</li>
+            <li>test li</li>
+            <li>test li</li>
+        </ol>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <strong>BR/</strong> </br> Ex autem eveniet ut totam
+        molestiae pariatur
+        doloremque magnam aut iure et delectus, sequi inventore quaerat culpa modi provident, repellat, nobis ad.
+
+
+
+        <div style="text-align: center">
+            <h3>Формы</h3>
+            <div>
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <p>
+                        Введите имя <input type="text" placeholder="Имя" name="username" value="" />
+                    </p>
+                    <p>
+                        Введите пароль <input type="password" placeholder="Пароль" name="userpass" value="" />
+                    </p>
+                </form>
+            </div>
+            <h3>RADIO</h3>
+            <div>
+                <p><input checked type="radio" name="one" value="yes">Черный</p>
+                <p><input type="radio" name="one" value="yes">Красный</p>
+            </div>
+            <h3>CHECKBOX</h3>
+            <p><input checked type="checkbox" name="two" value="yes"> Черный</p>
+            <p><input type="checkbox" name="two" value="yes"> Красный</p>
+            <h3>FILE</h3>
+            <div>
+                <p><input type="file" name="foto" /></p>
+            </div>
+            <h3>TEXTAREA</h3>
+            <div>
+                <textarea name="text" id="" ></textarea> 
+            </div>
+            <h3>SELECT & OPTION</h3>
+            <p>select - коробочка</p>
+            <p>option - пункт выпадающего списка</p>
+            <div class="container">
+                <div class="form-group mr-5">
+                    <select multiple name="color" id="">
+                        <option value="red">Красный</option>
+                        <option selected value="yellow">Желтый</option>
+                        <option value="green">Зеленый</option>
+                        <option value="blue">Голубой</option>
+                    </select>
+                    <select name="color" id="">
+                        <option value="red">Красный</option>
+                        <option value="yellow">Желтый</option>
+                        <option selected value="green">Зеленый</option>
+                        <option value="blue">Голубой</option> 
+                    </select>
+                </div>
+            </div>
+            <h3>BUTTON</h3>
+            <div>
+                <button type="submit">Отправить</button>
+            </div>
+            <h3>DISABLED</h3>
+            <div>
+                <p>Нельзя выбрать</p>
+                <input disabled type="text" placeholder="нельзя ничего ввести"/>
+            </div>
+            <h3>TAB INDEX</h3>
+            <div>
+                <p><input tabindex="4" placeholder="4" type="text"></p>
+                <p><input tabindex="3" placeholder="3" type="text"></p>
+                <p><input tabindex="2" placeholder="2" type="text"></p>
+                <p><input tabindex="1" placeholder="1" type="text"></p>
+            </div>
+        </div>
+</body>
+
+</html>
