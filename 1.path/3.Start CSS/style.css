@@ -1,0 +1,27 @@
+div {
+
+}
+
+/* Класс */
+.biggreen {
+    font-size: 20px; /* размер текста */
+    color: seagreen
+}
+
+/* Приоритетней так как идет от span */
+span.biggreen {
+    font-size: 40px; /* размер текста */
+    color: blue
+}
+
+/* Вложенность */
+.biggreen span {
+    color: tan;
+}
+
+/* Обращение к первому уровню вложенных тегов */
+.block>p {
+    color: blue;
+    font-size: small;
+    border: 1px solid #999
+}
