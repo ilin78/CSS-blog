@@ -24,6 +24,52 @@ padding - внутренний отступ блочных тегов
 
 /* border - Граница */
 
+.inline {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.inline-block {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.display {
+    display: block;
+    padding: 20px;
+    border: 1px solid #000;
+}
+.block {
+    overflow: block;
+    padding: 20px;
+    border: 1px solid #000;
+}
+.scroll {
+    overflow: scroll;
+    max-height: 65px;  
+    border: 1px solid #000;
+}
+.visible {
+    overflow: visible;
+    max-height: 65px;
+    margin: 30px;
+    border: 1px solid #000;
+}
+.overblock {
+    overflow: hidden;
+    max-height: 65px;
+    margin: 30px;
+    border: 1px solid #000;
+}
+.example-padding {
+    width: 200px;
+    padding: 30px;
+    margin: 10px, 0px;
+    border: 1px solid #000;
+}
+
 .example-block {
     padding: 10%;
     border: 1px solid #999
@@ -44,11 +90,18 @@ padding - внутренний отступ блочных тегов
 
 /* Зафиксированный размер */
 .example-image {
-    width: 100px;
+    width: 100%;
+    max-width: 1600px;
+    min-width: 800px;
+    
+    height: 50%;
+    max-height: 1000px;
+    min-width:200px;
 }
 
 /* Минимальная ширина */
 .example-min-image {
     min-width: 30%;
 }
+
 
