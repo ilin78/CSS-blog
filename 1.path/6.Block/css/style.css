@@ -85,7 +85,7 @@ padding - внутренний отступ блочных тегов
 
 .example-margin {
     margin: 10%;
-    border: 1px solid #999
+    border: 1px solid #999;
 }
 
 /* Зафиксированный размер */
