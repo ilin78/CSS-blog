@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/stylenull.css">
+    <title>Document</title>
+</head>
+
+<body>
+    Быстрая запись  .name__$*3
+    <p class="pre">
+        position: 
+            <color-red>static</color-red> - По умолчанию
+                
+                        <code>position: static;</code>
+
+            <color-red>relative</color-red> - Изначального положения в коде
+                можно использовать только 2 параметра:
+                    - left OR right и top OR bottom
+
+                также если этот блок перекрывает нижний, то можно 
+                использвать Z-INDEX по умолчанию 0
+            <code>
+            position: relative;
+            top: 10px;
+            left: 30px;
+            z-index: 2;
+            </code>
+
+            <color-red>absolute</color-red> - абсолютное позиционирование
+                Если указать параметры так, то блок выдернится из всех блоков
+                и встанет в левом верхнем углу:
+            <code>
+            position: absolute;
+            left: 0;
+            top: 0;
+            </code>
+
+                Однако если скзать родителю position: relative;
+                То блок будет позиционировать из родителя в левом вернем углу
+    
+            <color-red>fixed</color-red> - пренадлежит блоку body
+
+            <code>
+            width: 100%;
+            color: white;
+            z-index: 4;
+            position: fixed;
+            </code>
+
+            <color-red>sticky</color-red> - пренадлежит блоку body
+            при скроле можно указать top и когда будет 
+            подниматься блок, то он застрянет вверху
+            <code>
+            position: sticky;
+            background-color: turquoise;
+            z-index: 7;
+            top: 34px;
+            </code>
+            </p>
+
+    <p class="pre">
+    <color-exp>Example:</color-exp> 
+        <ul class="list">
+            <li>Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aperiam nisi consequatur repellat voluptate dolor molestiae est harum, beatae sed debitis? Ullam nihil minima quod facere culpa rerum fugit excepturi!
+            </li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+    </p>
+
+    <p class="pre">
+
+        Как это использовать
+    <code>
+        .list li{
+            max-width: 600px;
+            position: relative;
+            left: 80px;
+            font-size: 18px;
+            line-height: 28px;
+            padding: 0px 0px 0px 20px;
+        }
+        
+        .list li:before {
+            content: '';
+            background-color: rgb(35, 211, 35);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0px;
+            top: 10px;
+        }
+    </code>
+    </p>
+
+
+    
+    <div class="block">
+        <div class="block__1">.block__1</div>
+        <div class="block__2">.block__2</div>
+        <div class="block__3">.block__3</div>
+    </div>
+
+    <div class="block2">
+        <div class="block2__1">.block__1</div>
+        <div class="block2__2">.block__2</div>
+        <div class="block2__3">.block__3</div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/stylenull.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="pseudo-elements">
+        <p>Основные псевдо элементы
+
+            :after{
+                content '';
+            }
+            :before{
+                content '';
+            }
+
+            
+            :first-line  - Изменить первую строку
+            :first-letter- Изменить первую букву
+        </p>
+    </div>
+
+    <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo vel vero, omnis earum quod soluta velit repellat
+        cum, perspiciatis aperiam qui suscipit alias, et sunt aliquam quisquam adipisci expedita molestias.
+    </p>
+    <ul class="list-after-and-before">
+        <li>text</li>
+        <li>text</li>
+    </ul>
+
+
+    <div class="pseudo-elements">
+        <p>Изменить список при наведении
+        .list-before li:before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: red;
+            display: inline-block;
+            margin: 0 10px 0 0;
+        }
+        
+        .list-before li:hover:before {
+            background-color: yellow;
+        }
+        
+        .list-before li:active:before {
+            background-color: green;
+        }
+    </p>
+    </div>
+    <ul class="list-before">
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+
+</body>
+
+</html>

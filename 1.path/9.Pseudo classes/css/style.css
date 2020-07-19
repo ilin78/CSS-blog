@@ -1,0 +1,156 @@
+body {
+    padding: 30px;
+}
+
+.theme {
+    font-size: 20px;
+    color: teal;
+}
+
+.theme .pre {
+    white-space: pre;
+    line-height: 18px;
+}
+
+.block {
+    margin: 0 0 20px 0;
+}
+
+.block p {
+    font-size: 18px;
+    line-height: 24px;          /* Межстрочный интервал */
+    margin: 0px 0px 20px 0px;
+}
+
+.block p:last-child {
+    text-transform: uppercase;
+}
+
+.about-hover-img1 {
+    /* background: url('../img/4.jpg') 50%/cover no-repeat; */
+
+    
+    background: url('../img/1.jpg') 0 0 no-repeat;
+    height: 150px;
+    width: 237px;
+    border-radius: 3px;
+    border: 2px solid #aaa;
+}
+
+.about-hover-img2 {
+    /* background: url('../img/4.jpg') 50%/cover no-repeat; */
+
+    
+    background: url('../img/2.jpg') 0 0 no-repeat;
+    height: 80px;
+    width: 180px;
+    border-radius: 3px;
+    border: 2px solid #aaa;
+}
+
+.about-hover-img3 {
+    /* background: url('../img/4.jpg') 50%/cover no-repeat; */
+
+    
+    background: url('../img/3.jpg') 0 0 no-repeat;
+    height: 80px;
+    width: 180px;
+    border-radius: 3px;
+    border: 2px solid #aaa;
+}
+
+.link {
+    color: crimson;
+}
+
+.link:visited {
+    color: green;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.link:active {
+    color: yellow;
+}
+
+
+
+
+.textinput {
+    border: 2px solid rgb(134, 95, 37);
+    height: 50px;
+    padding: 0px 15px;
+    font-size: 18px;
+    width: 300px;
+    border-radius: 4px;
+    margin: 0px 0px 10px 0px;
+}
+.textbutton {
+    display: block;
+    width: 300px  ;
+    height: 50px;
+    background-color: rgb(134, 95, 37);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0px 0px 30px 0px;
+    box-shadow: 1px 1px 2px #b4710b83;
+}  
+button:hover {
+    background-color: rgb(95, 57, 0);
+}
+
+.textinput:focus {
+    border: 2px solid rgb(156, 94, 0);
+    box-shadow: 1px 2px 3px #aaa;
+    
+}
+/* .textinput:hover {
+    color: skyblue;
+} */
+
+.block:hover {
+    background: rgb(252, 252, 252);
+}
+
+.list li {
+    font-size: 18px;
+    margin: 0px 0px 15px 0px;
+}
+
+
+/* 
+Первый по списку
+.list li:first-child {
+    color: green;
+}
+
+Последний по списку 
+.list li:last-child {
+    color: red;
+    font-weight: 800; 
+}
+
+Второй по списку 
+.list li:nth -child(2){
+    color: blue
+} 
+*/
+
+.how-use-list {
+    background: url('../img/4.jpg') 0 0 no-repeat;
+    height: 300px;
+    width: 380px;
+    border-radius: 3px;
+    border: 2px solid #aaa;
+}
+
+/* odd - изменить стиль не четных */
+/* even - изменить стиль четных */
+.list li:nth-child(even){ 
+    color: blue
+} 
