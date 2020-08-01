@@ -1,0 +1,28 @@
+
+$color_1: red;
+
+@mixin fontz ($f) {
+  font-size: $f; 
+}
+
+%tplborder{
+  border-bottom: 2px dashed $color_1;
+}
+
+.block {
+  width: 300px / 960px * 100%;
+  background-color: #ddd;
+  padding: 20px;
+  color: $color_1; 
+  line-height: 20px;
+  @include fontz(20px);
+  span {
+    color: $color_1;
+  }
+}
+.link {
+  @extend %tplborder;
+  &:hover {
+    color: red;
+  }
+}
