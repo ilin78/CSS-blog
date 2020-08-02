@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+body {
+  margin-top: 40px;
+  font-family: Lato;
+}
+
+.about {
+  &__header {
+    margin: 0 0 65px 0;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__text {
+    min-width: 688px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25.89px;
+    margin: 0px auto;
+    margin-bottom: 40px;
+  }
+  &__row {
+    display: flex;      // Колонка
+    margin: 0px -145px; // Ширина колонки
+    margin: 0px -15px;  // Внутренний отступ слева и справа
+  }
+  &__column {
+    padding: 0 15px;    //  Внешний отступ слева и справа
+    flex: 0 0 33.333%   // Ширина между колонками
+  }
+  &__body {
+    max-width: 823px;
+    margin: 0px auto;
+  }
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    height: 1px;
+    left: 50%;
+    background-color: #000;
+    margin-bottom: -25px;
+  }
+}
+
+.item-about {
+  &__icon {
+    margin: 0 auto;             // центрирование внешнего круга
+    border-radius: 50%;
+    width: 92px;
+    height: 92px;
+    border: 2px solid #f1f1f1; // цвет круглой границы
+    display: flex;               // центрирование картинки
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  &__title {
+    text-align: center;
+    color: #000;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3.52px;
+    margin-bottom: 35px;
+  }
+  &__text {
+    text-align: center;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
