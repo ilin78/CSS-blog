@@ -7,7 +7,7 @@
 - 3 basis
 
 Таким образом получится:
-```scss 
+```css 
     flex: 0 1 auto;
 ```
 
@@ -76,7 +76,7 @@
 ## flex-basis
 Базовый размер элемента.
 
-```scss
+```css
     flex-basis: auto;
 ```
 
@@ -90,7 +90,7 @@
 
 По умолчанию:
 
-```scss
+```css
     flex-grow: 0;
 ```
 
