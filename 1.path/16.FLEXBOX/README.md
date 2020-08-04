@@ -4,10 +4,10 @@
 ```css
     display: flex;
 ```
-- По умолчанию ```flex full.jpg```
-
-- Поведение при изменении размера эрана ```flex.jpg```
-
+- По умолчанию 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex%20full.jpg)
+- Поведение при изменении размера эрана 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex.jpg)
 
 ## inline-flex
 
@@ -15,9 +15,10 @@
     display: inline-flex;
 ```
 
-- По умолчанию ```inline-flex full.jpg```
-
-- Поведение при изменении размера эрана ```inline-flex.jpg```
+- По умолчанию 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/inline-flex%20full.jpg)
+- Поведение при изменении размера эрана 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/inline-flex.jpg)
 
 ## justify-content
 
@@ -33,9 +34,10 @@
     justify-content: flex-end;
 ```
 
-- По умолчанию ```justify-content full.jpg```
-- Поведение при изменении размера эрана ```justify-content.jpg```
-
+- По умолчанию 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/justify-content%20full.jpg)
+- Поведение при изменении размера эрана
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/justify-content.jpg)
 ## align-items
 
 ```align-items``` определяет поведение вдоль поперечной оси.
@@ -53,12 +55,12 @@
 
 ## flex-wrap
 
-- По умолчанию ```flex-wrap full.jpg```
-
-- Поведение при изменении размера эрана ```flex-wrap.jpg```
-
-- Переворот значений ```flex-wrap-reverse.jpg```
-
+- По умолчанию 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-wrap%20full.jpg)
+- Поведение при изменении размера эрана 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-wrap.jpg)
+- Переворот значений 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-wrap-reverse.jpg)
 ```css
     display: flex;
     flex-wrap: wrap;
