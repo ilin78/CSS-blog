@@ -26,6 +26,11 @@
 
 ## justify-content
 
+```css
+    display: flex;
+    justify-content: flex-end;
+```
+
 ```justify-content``` - определяет выравнивание вдоль основной оси и принимает один из параметров:
 - ```flex-start``` разместить все блоки с права.
 - ```flex-end``` разместить все блоки слева.
@@ -33,10 +38,7 @@
 - ```space-between``` пространство между блоками.
 - ```space-around``` пространство со всех сторон
 
-```css
-    display: flex;
-    justify-content: flex-end;
-```
+
 
 - По умолчанию 
 
@@ -48,18 +50,25 @@
 
 ```align-items``` определяет поведение вдоль поперечной оси.
 
+```css
+    display: flex;
+    align-items: flex-start;
+```
+
 - ```stretch``` значение по умолчанию.
 - ```flex-start``` выранивание по высоте начало сверху.
 - ```flex-end``` выранивание по высоте начало снизу.
 - ```center``` выранивание по высоте по центру.
 - ```baseline``` выранивание по высоте базовой линии шрифта.
 
-```css
-    display: flex;
-    align-items: flex-start;
-```
+
 
 ## flex-wrap
+
+```css
+    display: flex;
+    flex-wrap: wrap;
+```
 
 - По умолчанию 
 
@@ -71,8 +80,5 @@
 - Переворот значений 
 
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-wrap-reverse.jpg)
-```css
-    display: flex;
-    flex-wrap: wrap;
-```
+
 
