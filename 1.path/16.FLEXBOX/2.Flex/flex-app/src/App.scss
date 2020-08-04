@@ -7,14 +7,30 @@
 .block {
   &__row {
     display: flex;
-    flex-wrap: wrap-reverse;
-
+    align-items: center;
     border:20px solid #feddef;
     margin-bottom: 20px;
   }
   &__column {
     border:20px solid #deffed;
+    flex-basis: auto;
+    flex-grow: 1;
+    width: 200px;
+    flex-shrink: 1;
+    
+    &_1{
+      order: 3;
+    }
+    
+    &_2{
+      order: 2;
+    }
+  
+    &_3{
+      order: 1;
+    }
   }
+  
   &__item {
     background-color: skyblue;
     padding: 30px; 
@@ -22,8 +38,8 @@
     color: #fff;
     font-weight: 700;
   }
-  &__list {
-    
+
+  &__list {  
     align-items: center;
     li{margin-bottom: 15px;
       &:last-child{margin: 0 0 0 0;}

@@ -15,7 +15,7 @@
 
 ## inline-flex
 
-```css
+```scss
     display: inline-flex;
 ```
 
@@ -31,7 +31,7 @@
 
 ```justify-content``` - определяет выравнивание вдоль основной оси
 
-```css
+```scss
     display: flex;
     justify-content: flex-end;
 ```
@@ -54,7 +54,7 @@
 
 ```align-items``` определяет поведение вдоль поперечной оси.
 
-```css
+```scss
     display: flex;
     align-items: flex-start;
 ```
@@ -67,7 +67,7 @@
 
 ## flex-wrap
 
-```css
+```scss
     display: flex;
     flex-wrap: wrap;
 ```
