@@ -6,6 +6,9 @@
 }
 .block {
   &__row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+
     border:20px solid #feddef;
     margin-bottom: 20px;
   }
@@ -14,13 +17,13 @@
   }
   &__item {
     background-color: skyblue;
-    padding: 50px;
+    padding: 30px; 
     font-size: 50px;
     color: #fff;
     font-weight: 700;
   }
   &__list {
-    display: flex;
+    
     align-items: center;
     li{margin-bottom: 15px;
       &:last-child{margin: 0 0 0 0;}
