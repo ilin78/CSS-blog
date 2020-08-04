@@ -5,8 +5,10 @@
     display: flex;
 ```
 - По умолчанию 
+
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex%20full.jpg)
 - Поведение при изменении размера эрана 
+
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex.jpg)
 
 ## inline-flex
@@ -16,8 +18,10 @@
 ```
 
 - По умолчанию 
+
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/inline-flex%20full.jpg)
 - Поведение при изменении размера эрана 
+
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/inline-flex.jpg)
 
 ## justify-content
@@ -35,8 +39,10 @@
 ```
 
 - По умолчанию 
+
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/justify-content%20full.jpg)
 - Поведение при изменении размера эрана
+
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/justify-content.jpg)
 ## align-items
 
@@ -56,10 +62,14 @@
 ## flex-wrap
 
 - По умолчанию 
+
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-wrap%20full.jpg)
 - Поведение при изменении размера эрана 
+
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-wrap.jpg)
+
 - Переворот значений 
+
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-wrap-reverse.jpg)
 ```css
     display: flex;
