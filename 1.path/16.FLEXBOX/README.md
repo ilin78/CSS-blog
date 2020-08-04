@@ -4,10 +4,12 @@
 ```css
     display: flex;
 ```
-- По умолчанию 
+
+По умолчанию 
 
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex%20full.jpg)
-- Поведение при изменении размера эрана 
+
+Поведение при изменении размера эрана 
 
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex.jpg)
 
@@ -17,21 +19,26 @@
     display: inline-flex;
 ```
 
-- По умолчанию 
+По умолчанию 
 
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/inline-flex%20full.jpg)
-- Поведение при изменении размера эрана 
+
+Поведение при изменении размера эрана 
 
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/inline-flex.jpg)
 
 ## justify-content
+
+
+
+```justify-content``` - определяет выравнивание вдоль основной оси
 
 ```css
     display: flex;
     justify-content: flex-end;
 ```
 
-```justify-content``` - определяет выравнивание вдоль основной оси и принимает один из параметров:
+Принимает один из параметров:
 - ```flex-start``` разместить все блоки с права.
 - ```flex-end``` разместить все блоки слева.
 - ```center``` разместить все блоки по центру.
@@ -40,10 +47,12 @@
 
 
 
-- По умолчанию 
+
+По умолчанию 
 
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/justify-content%20full.jpg)
-- Поведение при изменении размера эрана
+
+Поведение при изменении размера эрана
 
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/justify-content.jpg)
 ## align-items
@@ -65,19 +74,27 @@
 
 ## flex-wrap
 
+
 ```css
     display: flex;
     flex-wrap: wrap;
 ```
 
-- По умолчанию 
+- ```wrap``` 
+- ```nowrap``` 
+- ```wrap-reverse``` 
+
+
+По умолчанию 
 
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-wrap%20full.jpg)
-- Поведение при изменении размера эрана 
+
+Поведение при изменении размера эрана 
 
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-wrap.jpg)
 
-- Переворот значений 
+
+Переворот значений 
 
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-wrap-reverse.jpg)
 
