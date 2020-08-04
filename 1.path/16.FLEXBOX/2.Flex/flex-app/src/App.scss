@@ -1,0 +1,40 @@
+.wraper {
+  height: 100%;
+  overflow: hidden;
+  min-height: 100%;
+  padding: 50px;
+}
+.block {
+  &__row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    border:20px solid #feddef;
+    margin-bottom: 20px;
+  }
+  &__column {
+    border:20px solid #deffed;
+  }
+  &__item {
+    background-color: skyblue;
+    padding: 30px; 
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+  }
+  &__list {
+    
+    align-items: center;
+    li{margin-bottom: 15px;
+      &:last-child{margin: 0 0 0 0;}
+    }
+  }
+  &__info {
+  }
+  &__info_y {
+  }
+  &__info_p {
+  }
+  &__info_g {
+  }
+}
