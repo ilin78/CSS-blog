@@ -80,10 +80,10 @@
     flex-basis: auto;
 ```
 
-- ```auto``` размер занимаемый контентом ```flex-basisauto.jpg```
-
-- ```20%```  размер занимаемый контентом 20% ```flex-basis20.jpg```
-
+- ```auto``` размер занимаемый контентом  
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-basisauto.jpg)
+- ```20%```  размер занимаемый контентом 20% 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-basis20.jpg)
 ## flex-grow
 
 Контроллирует возможность увеличиваться в размере относительного базового размера.
@@ -94,7 +94,8 @@
     flex-grow: 0;
 ```
 
-```flex-grow0.jpg```
+ 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-grow0.jpg)
 
 Залить полностью:
 
@@ -102,8 +103,7 @@
     flex-grow: 1;
 ```
 
-```flex-grow1.jpg```
-
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-grow1.jpg)
 
 ## flex-shrink
 
@@ -115,7 +115,8 @@
     width: 200px;
     flex-shrink: 0;
 ```
-```flex-shrink0.jpg```
+ 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-shrink0.jpg)
 
 - 1 разрешает уменьшаться в размере.
 ```css
@@ -123,6 +124,6 @@
     width: 200px;
     flex-shrink: 1;
 ```
-```flex-shrink1.jpg```
-
+ 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/16.FLEXBOX/image/flex-shrink1.jpg)
 
