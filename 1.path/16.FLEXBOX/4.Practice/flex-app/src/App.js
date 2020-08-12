@@ -67,7 +67,7 @@ export default class App extends Component {
                 <div className="columns__item item">
                   <div className="item__row">
                     <div className="item__image">
-                    <img src={Blog} alt="" />
+                      <img src={Blog} alt="" />
                     </div>
                     <div className="item__body">
                       <div className="item__title">Личные блоги</div>
@@ -76,8 +76,99 @@ export default class App extends Component {
                         блоги на ЖЖ или блогспот, в Моем мире и других
                         бесплатных хостингах. Как правило личные блоги ведутся
                         именно в социальных сетях и это есть ни что иное, как
-                        дневники их авторов. 
+                        дневники их авторов.
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="columns__column">
+                <div className="columns__item item">
+                  <div className="item__row">
+                    <div className="item__image">
+                      <img src={Blog} alt="" />
+                    </div>
+                    <div className="item__body">
+                      <div className="item__title">Личные блоги</div>
+                      <div className="item__text">
+                        Это самый распространенный тип. Примеров тому немало:
+                        блоги на ЖЖ или блогспот, в Моем мире и других
+                        бесплатных хостингах. Как правило личные блоги ведутся
+                        именно в социальных сетях и это есть ни что иное, как
+                        дневники их авторов.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="columns__column">
+                <div className="columns__item item">
+                  <div className="item__row">
+                    <div className="item__image">
+                      <img src={Blog} alt="" />
+                    </div>
+                    <div className="item__body">
+                      <div className="item__title">Личные блоги</div>
+                      <div className="item__text">
+                        Это самый распространенный тип. Примеров тому немало:
+                        блоги на ЖЖ или блогспот, в Моем мире и других
+                        бесплатных хостингах. Как правило личные блоги ведутся
+                        именно в социальных сетях и это есть ни что иное, как
+                        дневники их авторов.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="columns__column">
+                <div className="columns__item item">
+                  <div className="item__row">
+                    <div className="item__image">
+                      <img src={Blog} alt="" />
+                    </div>
+                    <div className="item__body">
+                      <div className="item__title">Личные блоги</div>
+                      <div className="item__text">
+                        Это самый распространенный тип. Примеров тому немало:
+                        блоги на ЖЖ или блогспот, в Моем мире и других
+                        бесплатных хостингах. Как правило личные блоги ведутся
+                        именно в социальных сетях и это есть ни что иное, как
+                        дневники их авторов.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="vertical">
+            <div className="container">
+              <div className="vertical__title title">Способы монетизации блогов</div>
+              <div className="vertical__body">
+                <div className="vertical__row">
+                  <div className="vertical__column">
+                    <div className="vertical__item">
+                      <div className="vertical__subtitle">Text</div>
+                      <div className="vertical__label">TEXT</div>
+                      <div className="vertical__text">TEXT TEXT TEXT TEXT</div>
+                      <a href="#" className="vertical__btn">BUTTON</a>
+                    </div>
+                  </div>
+                  <div className="vertical__column">
+                    <div className="vertical__item">
+                      <div className="vertical__subtitle">Text</div>
+                      <div className="vertical__label">TEXT</div>
+                      <div className="vertical__text">TEXT TEXT TEXT TEXT  Line 155:23:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid</div>
+                      <a href="#" className="vertical__btn">BUTTON</a>
+                    </div>
+                  </div>
+                  <div className="vertical__column">
+                    <div className="vertical__item">
+                      <div className="vertical__subtitle">Text</div>
+                      <div className="vertical__label">TEXT</div>
+                      <div className="vertical__text">TEXT TEXT TEXT TEXT</div>
+                      <a href="#" className="vertical__btn">BUTTON</a>
                     </div>
                   </div>
                 </div>
