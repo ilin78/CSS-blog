@@ -34,9 +34,29 @@ export default class App extends Component {
                   <div className="block__item">
                     <div className="block__text">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      {/* Eos nesciunt dolores possimus voluptatum repellendus quidem */}
-                      {/* sint accusamus magnam iste quia neque, assumenda, obcaecati */}
-                      {/* adipisci expedita nihil fuga velit quae est. */}
+                      Eos nesciunt dolores possimus voluptatum repellendus quidem
+                      sint accusamus magnam iste quia neque, assumenda, obcaecati
+                      adipisci expedita nihil fuga velit quae est.
+                    </div>
+                  </div>
+                </div>
+                <div className="block__title title"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  <div className="block__item">
+                    <div className="block__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Eos nesciunt dolores possimus voluptatum repellendus quidem
+                      sint accusamus magnam iste quia neque, assumenda, obcaecati
+                      adipisci expedita nihil fuga velit quae est.
+                    </div>
+                  </div>
+                </div>
+                <div className="block__title title"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  <div className="block__item">
+                    <div className="block__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Eos nesciunt dolores possimus voluptatum repellendus quidem
+                      sint accusamus magnam iste quia neque, assumenda, obcaecati
+                      adipisci expedita nihil fuga velit quae est.
                     </div>
                   </div>
                 </div>

@@ -1,9 +1,12 @@
 @import "./StyleNull.scss";
 body {
-  background-color: #eee;
+  background-color: #eee;padding: 40px;
 }
 .container {
   border: 2px solid red;
+  margin-bottom: 20px;
+  width: 1170px;
+  
 } 
 .wraper {
   display: flex;
@@ -28,7 +31,7 @@ body {
 		}
 
 		&__logo {
-      margin-left: 10px;
+      margin-left: 30px;
       width: 65px;
       height: 65px;
       background-color: #888;
@@ -49,10 +52,9 @@ body {
   flex: 0 0 auto;
   font-size: 20px;
   margin: 0px 22px; 
- 
+   
   color: #888;
 		&__body {    
-      
     } 
     &__list {
       display: flex;
@@ -76,15 +78,22 @@ body {
 }
 
 .block {
-  &__block__row {
-    
+  background-color: #aaa;
+  
+  
+  &__row {
+    display: flex;
+    flex-direction: row;  
   }
   &__title {
+    background-color: #fff;
+    height: 200px;
     border: 2px solid red;
-
+    margin: 20px;
   }
   &__item {
-    border: 2px solid yellow;
+    background-color: #444;
+    color: red;
   }
   &__text {
     border: 2px solid green;
