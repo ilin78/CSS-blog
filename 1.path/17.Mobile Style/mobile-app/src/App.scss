@@ -1,12 +1,16 @@
 @import "./StyleNull.scss";
+html, body {
+  height: 100%;
+}
+
 body {
-  background-color: #eee;padding: 40px;
+  background-color: #eee;
+  padding: 40px;
+  min-width: 1170px;
 }
 .container {
   border: 2px solid red;
   margin-bottom: 20px;
-  width: 1170px;
-  
 } 
 .wraper {
   display: flex;
@@ -15,7 +19,7 @@ body {
   flex-direction: column; 
 }
 .content {
-  max-width: 1170px;
+  width: 1170px;
   width: 100%;
   margin: 0px auto;
 }
@@ -76,27 +80,66 @@ body {
       font-size: 18px;
 		}
 }
-
+.title{
+  background-color: skyblue;
+}
 .block {
-  background-color: #aaa;
-  
-  
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 30px;
+  &__title {
+    padding-bottom: 20px ;
+  }
+ 
+  &__body {
+    max-width: 990px;
+    margin: 0px auto;
+  }
   &__row {
     display: flex;
-    flex-direction: row;  
+    margin: 0px -22.5px;
+  }
+  &__column {
+    flex: 0 1 33.333%;
+    padding: 0px 22.5px;
+    display: flex;
+  }
+  &__item {    
+    min-width: auto;
+    background-color: #deffed;
+    border-radius: 5px;
+    border: 1px solid #deffed;
+    display: flex;
+    flex-direction: column;
   }
   &__title {
-    background-color: #fff;
-    height: 200px;
-    border: 2px solid red;
-    margin: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 12px 0;
+    color: #ebf4ff;
   }
-  &__item {
-    background-color: #444;
-    color: red;
+  &__label {
+    text-align: center;
+    background-color: white;
+    color: #445162;
+    padding: 15px 0;
+    font-size: 20px;
   }
   &__text {
-    border: 2px solid green;
+    color: #445162;
+    padding: 20px;
+    flex: 1 1 auto;
+  }
+  &__btn {
+    display: block;
+    height: 40px;
+    margin: 20px;
+    background-color: #fff;
+    padding-bottom: 20px;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #445162;
   }
 }
 
