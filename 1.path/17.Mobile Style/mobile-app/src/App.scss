@@ -28,6 +28,7 @@ body {
 
 @media (max-width: 1170px){
   .container{
+
     max-width: 970px;
   }
 }
@@ -38,7 +39,17 @@ body {
 }
 @media (max-width: 767px){
   .container{
-    max-width: none;
+    max-width: 750px;
+  }
+}
+@media (max-width: 350px){
+  .container{
+    max-width: 300px;
+  }
+}
+@media (max-width: 250px){
+  .container{
+    min-width: 210px;
   }
 }
 .header {
@@ -50,8 +61,6 @@ body {
      align-items: center;
      height: 44px;
      justify-content: space-around;
-     
-
 		}
 
 		&__logo {
@@ -101,6 +110,23 @@ body {
 .title{
   background-color: rgb(249, 249, 249);
 }
+
+@media (min-width:412px){
+  .block__body{
+    margin: 10px auto;
+    font-size: 15px;
+  }
+}
+@media (min-width:767px){
+  .block__body{
+    font-size: 20px;
+  }
+}
+@media (min-width:992px){  
+  .block__body{
+    font-size: 25px;
+  }
+}
 .block {
   padding: 10px;
   text-align: center;
@@ -110,6 +136,7 @@ body {
     max-width: 990px;
     margin: 0px auto;
   }
+ 
   &__row {
     display: flex;
     margin: 0px -22.5px;
