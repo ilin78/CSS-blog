@@ -1,190 +1,83 @@
-@import "./StyleNull.scss";
-html, body {
-  height: 100%;
-  width: 100%;
+button {
+  min-width: 200px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 60px;
+  padding: 0px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+  border-radius: 10px;
+  top: 0;
+  position: relative;
+  border: none;
+  margin: 50px;
 }
 
-body {
-  // min-width: 1170px;
-}
-.container {
-  background-color: #fff;
-  margin: 0px auto;
-} 
+
 .wrapper {
+  height: 100%;
   display: flex;
-  overflow: hidden;
-  min-height: 100%;
-  flex-direction: column; 
+  padding: 50px;
+  justify-content: center;
 }
+
 .content {
-  margin: 0px auto;
-}
-.content-full {
-  width: 100%;
-  margin: 0px auto;   
-} 
-
-
-@media (max-width: 1170px){
-  .container{
-
-    max-width: 970px;
-  }
-}
-@media (max-width: 992px){
-  .container{
-    max-width: 750px;
-  }
-}
-@media (max-width: 767px){
-  .container{
-    max-width: 750px;
-  }
-}
-@media (max-width: 350px){
-  .container{
-    max-width: 300px;
-  }
-}
-@media (max-width: 250px){
-  .container{
-    min-width: 210px;
-  }
-}
-.header {
-    &__row {  
-
-     background-color: #222;
-     display: flex;
-     flex-wrap: wrap;
-     align-items: center;
-     height: 44px;
-     justify-content: space-around;
-		}
-
-		&__logo {
-      
-      font-size: 30px;
-      font-weight: 500;
-      line-height: 24px;
-      letter-spacing: 0.6px;
-      color: rgb(87, 87, 87);
-    }
-
-		&__menu {
-      
-      display: flex;
-      flex-grow: 1;
-      align-items: flex-start;
-		}
-}
-.menu {
-  
   display: flex;
-  flex: 0 0 auto;
-  font-size: 20px;
-  margin: 0px 22px; 
-   
-  color: rgb(146, 146, 146);
-		&__body {    
-    } 
-    &__list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin: 0px 10px;
-    }
-		&__list li {
-     
-      line-height: 24px;
-      margin: 0 20px;
-      text-align: center;
-      padding: 0 20px;
-    }
-    &__link {
-      color: #ddd;
-    }
- 
-}
-.title{
-  background-color: rgb(249, 249, 249);
+  flex-direction: column;
 }
 
-@media (min-width:412px){
-  .block__body{
-    margin: 10px auto;
-    font-size: 15px;
-  }
+.ease {
+  display: flex;
+  flex-direction: column;
 }
-@media (min-width:767px){
-  .block__body{
-    font-size: 20px;
-  }
-}
-@media (min-width:992px){  
-  .block__body{
-    font-size: 25px;
-  }
-}
-.block {
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 30px;
- 
-  &__body {
-    max-width: 990px;
-    margin: 0px auto;
-  }
- 
-  &__row {
-    display: flex;
-    margin: 0px -22.5px;
-  }
-  &__column {
-    flex: 0 1 33.333%;
-    padding: 0px 22.5px;
-    display: flex;
-    margin: 20px 0;
-  }
-  &__item {    
-    min-width: auto;
-    background-color: #ffffff;
-    border-radius: 5px;
-    border: 1px solid #ffffff;
-    display: flex;
-    flex-direction: column;
 
-    box-shadow: 0px 0px 2px rgb(216, 216, 216);
-  }
-  &__title {
-    font-size: 24px;
-    text-transform: uppercase;
-    flex: 0 1 auto;
-    padding: 12px 0;
-    text-align: center;
-    color: #000000;
+.button__row {
+  display: flex;
+  flex-direction: row;
+}
 
-  }
- 
-  &__text {
-    color: #000000;
-    padding: 20px;
-    flex: 1 1 auto;
-    line-height: 25px;
-  }
-  &__btn {
-    display: block;
-    height: 40px;
-    margin: 20px;
-    background-color: #eee;
-    padding-bottom: 20px;
-    line-height: 40px;
-    border-radius: 2px;
-    font-size: 18px;
-    color: #333333;
-    font-weight: 380;
-    box-shadow:  1px 1px 0px rgb(192, 192, 192);
-  }
+
+//------------------------D U R A T I O N---------------------------------
+.button_duration {
+  color: #fff;
+  background-color: #dad;
+  box-shadow: 0px 5px 0px #daa;
+  transition-duration: 500ms;
+}
+
+.button_duration:hover {
+  top: 2px;
+  box-shadow: 0px 3px 0px #ada;
+  background-color: #aad;
+}
+//------------------------P R O P E R T Y---------------------------------
+.button_property {
+  color: #fff;
+  background-color: #dad;
+  box-shadow: 0px 5px 0px #daa;
+  transition-duration: 3500ms, 150ms;
+  transition-property:  background-color, top;
+}
+
+.button_property:hover {
+  top: 2px;
+  box-shadow: 0px 3px 0px #ada;
+  background-color: #aad;
+}
+//------------------------D E L A Y---------------------------------------
+.button_delay {
+  color: #fff;
+  background-color: #dad;
+  box-shadow: 0px 5px 0px #daa;
+  transition-duration: 3500ms, 150ms;
+  transition-property:  background-color, top, box-shadow;
+  transition-delay: 0s, 0.2s, 0.2s;
+}
+
+.button_delay:hover {
+  top: 2px;
+  box-shadow: 0px 3px 0px #ada;
+  background-color: #aad;
 }
 
