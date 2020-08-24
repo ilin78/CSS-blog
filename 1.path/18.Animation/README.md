@@ -51,8 +51,9 @@
   background-color: #aad;
 }
 ```
+### transition-timing-function
 
-- ```transition-timing-function``` - задает стиль перехода, некий сценарий по которому может осуществляться анимация.
+```transition-timing-function``` - задает стиль перехода, некий сценарий по которому может осуществляться анимация.
 
 ```ease```
 ```ease-in```
