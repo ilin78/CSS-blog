@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import "./App.scss";
 
-var myBlog = require("./img/myBlog.jpg");
-var What = require("./img/what.jpg");
-var Blog = require("./img/blog.jpg");
-
 export default class App extends Component {
   render() {
     return (
       <div className="wrapper">
-        <div className="content">transition
+        <div className="content">
+          <div className="path">часть 2</div>
+          <div ></div>
+          <div className="path">часть 1</div>
+          transition
           <div className="button__row">
             <button className="button_duration"> Duration </button>
 
@@ -31,6 +31,7 @@ export default class App extends Component {
           <div className="animation">@keyframes
             <div className="super__circle"></div>
           </div>
+          
         </div>
       </div>
     );

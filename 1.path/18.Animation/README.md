@@ -1,4 +1,7 @@
 ## Анимация
+
+# ЧАСТЬ 1
+
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/animation.gif)
 ### Transition
 
@@ -244,3 +247,5 @@ animation-delay: 1s;                          // Ожидание 1 сек
   }
 }
 ```
+
+# ЧАСТЬ 2
