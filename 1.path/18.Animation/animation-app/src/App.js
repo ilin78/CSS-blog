@@ -7,7 +7,14 @@ export default class App extends Component {
       <div className="wrapper">
         <div className="content">
           <div className="path">часть 2</div>
-          <div ></div>
+          
+          <div className="block__translate block">
+            Translate
+          </div>
+
+
+
+
           <div className="path">часть 1</div>
           transition
           <div className="button__row">

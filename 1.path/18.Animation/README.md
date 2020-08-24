@@ -249,3 +249,28 @@ animation-delay: 1s;                          // Ожидание 1 сек
 ```
 
 # ЧАСТЬ 2
+
+## CSS Transform
+
+
+
+
+- ```div``` является блочным
+```html
+<div class="block"><div>  
+```
+```css
+.block {transform: ;}
+```
+
+- ```span``` не является блочным, поэтому требется изменит display: inline-block; 
+
+```html
+<span class="inline"><span>  
+```
+```css
+.inline {
+  display: inline-block;
+  transform: ;
+}
+```
