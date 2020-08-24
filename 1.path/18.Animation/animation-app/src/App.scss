@@ -28,50 +28,6 @@ button {
   flex-direction: column;
 }
 
-.ease {
-  button {
-    transition-duration: 1s;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    font-size: 15px;
-    margin: 20px 5px;
-    &:hover{
-      width: 100%;
-    }
-  }
-
-    .button-transition {
-    &_1 {
-      background-color: #ada;
-      transition-timing-function: ease;
-    }
-    &_2 {
-      background-color: #aed;
-      transition-timing-function:ease-in;
-    }
-    &_3 {
-      background-color: #add;
-      transition-timing-function:ease-out;
-    }
-    &_4 {
-      background-color: #aad;
-      transition-timing-function:ease-in-out;
-    }
-    &_5 {
-      background-color: #dad;
-      transition-timing-function:linear;
-    }
-    &_6 {
-      background-color: #daa;
-      transition-timing-function:cubic-beizer(3, end);
-    }
-    &_7 {
-      background-color: #dda;
-      transition-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55); //x1,y1,x2,y2
-    }
-  }
-}
 .button__row {
   display: flex;
   flex-direction: row;
@@ -120,4 +76,87 @@ button {
   box-shadow: 0px 3px 0px #ada;
   background-color: #aad;
 }
+//------------------------transition-timing-function----------------------
 
+.ease {
+  button {
+    transition-duration: 2s;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    margin: 10px 5px;
+    &:hover{
+      width: 100%;
+    }
+  }
+
+    .button-transition {
+    &_1 {
+      background-color: #ada;
+      transition-timing-function: ease;
+    }
+    &_2 {
+      background-color: #aed;
+      transition-timing-function:ease-in;
+    }
+    &_3 {
+      background-color: #add;
+      transition-timing-function:ease-out;
+    }
+    &_4 {
+      background-color: #aad;
+      transition-timing-function:ease-in-out;
+    }
+    &_5 {
+      background-color: #dad;
+      transition-timing-function:linear;
+    }
+    &_6 {
+      background-color: #daa;
+      transition-timing-function:steps(50, end);
+    }
+    &_7 {
+      background-color: #dda;
+      transition-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55); //x1,y1,x2,y2
+    }
+  }
+}
+
+//---------------------------keyframes------------------------------------
+
+.animation {
+  
+  .super__circle {
+    
+    width: 100px;
+    height: 100px;
+    background-color: #aad;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    margin: 20px 0;
+    animation: circle 5s ease-out 1 forwards alternate 1s;
+  }
+  .super__circle:hover {
+    
+    animation-play-state: paused;
+  }
+
+  @keyframes circle {
+    0% {
+      left: 0;
+      background-color: #aad;
+    }
+    50% {      
+      background-color: #fff;
+      border-radius: 20px;
+    }
+    100% {
+      left:  620px;
+      background-color: #dad;
+    }
+  }
+}

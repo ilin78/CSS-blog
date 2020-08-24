@@ -1,6 +1,6 @@
 ## Анимация
 
-#### Transition
+### Transition
 
 - ```transition-duration: 0s;``` - определяет интервал, в течении которого будет происходить переход. Например 500ms.
 ```css
@@ -104,6 +104,141 @@
     &_7 {
       background-color: #dda;
       transition-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55); //x1,y1,x2,y2
+    }
+  }
+}
+```
+
+
+### @keyframes 
+
+```scss
+@keyframes circle-1 {
+  from {
+
+  }
+  to {
+    
+  }
+}
+```
+
+#### ANIMATION_NAME 
+Привязка к элементу
+```scss
+ .super__circle {
+   animation-name: circle-1, circle-2;
+ }
+
+@keyframes circle-1 {} // Ключевой кадр 1
+@keyframes circle-2 {} // Ключевой кадр 2
+```
+#### ANIMATION_DURATION
+
+Отвечает за продолжительность анимации, т е время за которое проигрываются ключевые кадры.
+```  animation-duration: 1s, 500ms;``` время для каждого из названия элемента.
+```scss
+ .super__circle {
+   animation-name: circle-1, circle-2;
+   animation-duration: 1s, 500ms;
+ }
+
+@keyframes circle-1 {} // Ключевой кадр 1
+@keyframes circle-2 {} // Ключевой кадр 2
+```
+#### ANIMATION_TIMING_FUNCTION
+```scss
+animation-timing-function: ease,  circle-1, circle-2; //  по умолчанию ease 
+```
+
+#### ANIMATION_ITERATION_COUNT
+Движение бесконечно или несколько раз.
+```scss
+animation-iteration-count: 1;  // 1 раз, можно указать infinite
+```
+#### ANIMATION_DIRECTION
+```alternate``` - движение в обратную сторону
+```alternate-reverse``` - каждый не четный проход будет проигрываться задом наперед
+```css
+animation-direction: alternate;
+```
+#### ANIMATION_PLAY_STATE
+Запускать анимацию по определенному событию
+
+```css
+  .super__circle:hover {
+    animation-play-state: paused;
+  }
+```
+#### ANIMATION_DELAY
+Ожидать 2 секунды.
+```css
+animation-delay: 2s;
+```
+Или начать с середины.
+```css
+animation-delay: -1s;
+```
+#### ANIMATION_FILL_MODE
+Обозначает какие свойства будут применены после выполнения анимации.
+
+```css
+animation-fill-mode: forwards;   
+```
+
+#### Группировка кода
+
+На примере
+```scss
+ animation-name: circle;
+animation-duration: 5s;
+animation-timing-function:ease-out,  circle;  // по умолчанию ease
+animation-iteration-count: 1;                 // 1 раз, можно указать infinite
+animation-fill-mode: forwards;                // оставить анимацию на месте по окончании
+animation-direction: alternate;               // движение в обратную сторону
+animation-delay: 1s;                          // Ожидание 1 сек
+```
+
+Начало со слова ```animation```
+
+```scss
+   animation: circle 5s ease-out 1 forwards alternate 1s , <здесь можно указать еще один ключевой кадр>;
+```
+
+## Пример
+
+```css
+
+.animation {
+  
+  .super__circle {
+    
+    width: 100px;
+    height: 100px;
+    background-color: #aad;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    margin: 20px 0;
+    animation: circle 5s ease-out 1 forwards alternate 1s;
+  }
+  .super__circle:hover {
+    
+    animation-play-state: paused;
+  }
+
+  @keyframes circle {
+    0% {
+      left: 0;
+      background-color: #aad;
+    }
+    50% {      
+      background-color: #fff;
+      border-radius: 20px;
+    }
+    100% {
+      left:  620px;
+      background-color: #dad;
     }
   }
 }

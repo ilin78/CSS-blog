@@ -9,7 +9,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="wrapper">
-        <div className="content">
+        <div className="content">transition
           <div className="button__row">
             <button className="button_duration"> Duration </button>
 
@@ -18,7 +18,7 @@ export default class App extends Component {
             <button className="button_delay"> Delay </button>
           </div>
 
-          <div className="ease">Test
+          <div className="ease">transition-timing-function
             <button class="button-transition_1">ease</button>
             <button class="button-transition_2">ease-in</button>
             <button class="button-transition_3">ease-out</button>
@@ -26,6 +26,10 @@ export default class App extends Component {
             <button class="button-transition_5">linear</button>
             <button class="button-transition_6">steps</button>
             <button class="button-transition_7">cubic-beizer</button>
+          </div>
+
+          <div className="animation">@keyframes
+            <div className="super__circle"></div>
           </div>
         </div>
       </div>
