@@ -1,5 +1,5 @@
 ## Анимация
-
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/animation.gif)
 ### Transition
 
 - ```transition-duration: 0s;``` - определяет интервал, в течении которого будет происходить переход. Например 500ms.
