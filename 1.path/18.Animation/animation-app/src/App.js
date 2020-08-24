@@ -18,7 +18,15 @@ export default class App extends Component {
             <button className="button_delay"> Delay </button>
           </div>
 
-          <div className="ease">Test</div>
+          <div className="ease">Test
+            <button class="button-transition_1">ease</button>
+            <button class="button-transition_2">ease-in</button>
+            <button class="button-transition_3">ease-out</button>
+            <button class="button-transition_4">ease-in-out</button>
+            <button class="button-transition_5">linear</button>
+            <button class="button-transition_6">steps</button>
+            <button class="button-transition_7">cubic-beizer</button>
+          </div>
         </div>
       </div>
     );
