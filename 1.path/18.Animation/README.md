@@ -274,3 +274,90 @@ animation-delay: 1s;                          // Ожидание 1 сек
   transform: ;
 }
 ```
+
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/multi.gif)
+
+```scss
+.view-block{
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 100px;
+  width: 100px;
+  text-align: center;
+  box-shadow:0 0 1px #aaa;
+  transition: all 2.8s ease 0s;
+}
+
+.block__translate {
+ 
+  transform: translate(-50%, 0px); // сдвиг относительно центра + left 50%
+  position: relative;
+  left: 50%;
+  background-color: #930;
+  &:hover {
+    transform: translate(-80%, 10px);
+  }
+}
+
+.block__scale {
+  background-color: #618;
+  transform: scale(1);
+  &:hover {
+    transform: scale(1.5); // увеличить в 1.5 раз (x y или просто x)
+  }
+  &:active {
+    transform: scale(-1, 1); // при нажатии отобразить зеркально по x
+  }
+}
+
+.block__rotate {
+  position: relative;
+  left: 70%;
+  background-color: #60f;
+  transform: rotate(0);
+  &:hover {
+    transform: rotate(360deg);
+  }
+}
+
+.block__skew {
+  position: relative;
+  left: 30%;
+  background-color: #80f;
+  transform: skew(5deg, 5deg);
+  &:hover {
+    transform: skew(-5deg, -5deg)
+  }
+}
+
+.block__matrix {
+  line-height: 24px;
+  position: relative;
+  left: 0%;
+  background-color: #7a4;
+  transform: matrix(
+    1,  /*Масштабирование X SCALE */
+    0,  /*Деформация Y SKEW*/
+    0,  /*Деформация X SKEW*/
+    1,  /*Масштабирование Y SCALE */
+    0,  /*Смещение X TRANSLATE*/
+    0   /*Смещение Y TRANSLATE*/
+  );
+
+  &:hover {
+    transform: matrix(1.2, 0.8, 0.8, 1.2, 10, 10);
+  }
+}
+
+.block__multi {
+  position: relative;
+  left: 60%;
+  line-height: 24px;
+  background-color: #80f;
+
+  &:hover {
+    transform: translate(50px, 50px) scale(0.5) rotate(360deg);
+  }
+}
+
+```
