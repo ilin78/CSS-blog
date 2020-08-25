@@ -381,4 +381,51 @@ animation-delay: 1s;                          // Ожидание 1 сек
 
 ## 3D Transform
 
+Перспектива высчитывается по формуле ```d / (d-z)```, d - перспектива.
 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/pespective.jpg)
+
+Каждый компонент нужно обернуть в оболочку ```<div>```, чтобы можно было задавать перспективу.
+
+```html
+<div className="content__wrapper3d">
+  <div className="block__3D view-block">Translate</div>
+</div>
+```
+C приминением   ```perspective: 400px;``` и без перспективы ```perspective: 0px;```
+
+
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/pespective400.gif)
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/pespective0.gif)
+
+```css
+.content__3D .content__wrapper3d{
+  background-color: rgba(255, 112, 112, 0.178);
+  width: 150px;
+  height: 150px;
+  perspective-origin: center;
+  perspective: 400px;
+}
+
+.block {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  transition: all 2.8s ease 0s;
+  width: 150px;
+  height: 150px;
+
+  perspective-origin:center;
+  perspective: 0px;
+}
+
+.content__perspective {
+  background-color: #1a7; 
+  &:hover {
+    transform: rotateX(80deg) ;
+  }
+}
+```

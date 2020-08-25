@@ -1,5 +1,37 @@
 //-------------------------------------------- ЧАСТЬ 3 ---------------------------------------------
 
+ 
+
+.content__3D .content__wrapper3d{
+  background-color: rgba(255, 112, 112, 0.178);
+  width: 150px;
+  height: 150px;
+  perspective-origin: center;
+  perspective: 400px;
+}
+
+.block {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  transition: all 2.8s ease 0s;
+  width: 150px;
+  height: 150px;
+
+  perspective-origin:center;
+  perspective: 0px;
+}
+
+.content__perspective {
+  background-color: #1a7; 
+  &:hover {
+    transform: rotateX(80deg) ;
+  }
+}
+
 
 
 
