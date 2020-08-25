@@ -6,6 +6,11 @@ export default class App extends Component {
     return (
       <div className="wrapper">
         <div className="content">
+          <div className="path">часть 3</div>
+
+
+
+
           <div className="path">часть 2</div>
           
           <div className="block__translate view-block">Translate</div>
@@ -14,7 +19,9 @@ export default class App extends Component {
           <div className="block__skew view-block">Skew</div>
           <div className="block__matrix view-block"><p>Matrix</p> SCALE, SKEW, TRANSLATE</div>
           <div className="block__multi view-block"><p>translate() scale() rotate()</p> </div>
-          
+          <div className="block__transform-origin view-block">transform origin</div>
+
+
           <div className="path">часть 1</div>
           transition
           <div className="button__row">

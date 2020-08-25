@@ -360,4 +360,25 @@ animation-delay: 1s;                          // Ожидание 1 сек
   }
 }
 
+
+.block__transform-origin {
+  position: relative;
+  left: 10%;
+  line-height: 24px;
+  background-color: #08f;
+  line-height: 50px;
+  transform-origin: 0 0; // top left или 0 0 
+  transform: rotate(0deg);
+  &:hover {
+    transform: rotate(130deg);
+  }
+}
+
 ```
+
+
+# ЧАСТЬ 3
+
+## 3D Transform
+
+
