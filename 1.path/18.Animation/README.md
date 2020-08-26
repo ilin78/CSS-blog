@@ -392,20 +392,20 @@ animation-delay: 1s;                          // Ожидание 1 сек
   <div className="block__3D view-block">Translate</div>
 </div>
 ```
+### PERSPECTIVE
+
 C приминением   ```perspective: 400px;``` и без перспективы ```perspective: 0px;```
 
 
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/pespective400.gif)
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/pespective0.gif)
 
-```css
-.content__3D .content__wrapper3d{
-  background-color: rgba(255, 112, 112, 0.178);
-  width: 150px;
-  height: 150px;
-  perspective-origin: center;
-  perspective: 400px;
-}
+
+
+## Пример.
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/3d.gif)
+
+```scss
 
 .block {
   display: flex;
@@ -413,19 +413,171 @@ C приминением   ```perspective: 400px;``` и без перспект�
   justify-content: center;
   align-items: center;
   color: #fff;
-  text-align: center;
-  transition: all 2.8s ease 0s;
-  width: 150px;
-  height: 150px;
-
-  perspective-origin:center;
-  perspective: 0px;
+  transition: all 0.8s ease 0s;
+  width: 120px;
+  height: 120px;
+  background-color: #fdd;
 }
+ 
+.content{
+  // Родитель для content__perspective block
+  &__wrapper-perspective{
+    perspective-origin: center;
+    perspective: 500px;
+  }
 
-.content__perspective {
-  background-color: #1a7; 
-  &:hover {
-    transform: rotateX(80deg) ;
+  // Дочерний от content__wrapper-perspective block
+  &__perspective {
+    background-color: #1a7; 
+    &:hover {
+      transform: rotateX(40deg);
+    }
   }
 }
+
+```
+
+### TRANSLATE 3D (x, y, z)
+
+```scss
+.content{
+  &__wrapper-traslate{
+    transform: translate3D(0px, 0px, 0px); 
+    perspective: 500px;
+    margin-bottom: 20px;
+  }
+
+  &__translate3d {
+    background-color: #1a7; 
+    &:hover {  
+      transform: perspective(500px)  translate3d(20px, 20px, 50px);
+    }
+  }
+}
+```
+### SCALE 3D (x, y, z)
+
+```scss
+
+.content{
+  &__wrapper-scale {
+    transform: scale3D(1,1,1);
+    perspective: 500px;
+  }
+  &__scale3d {
+    background-color: #456; 
+    &:hover {
+      transform: scale3D(-1.2, 1.2,2);
+    }
+  }
+}
+
+```
+### ROTATE 3D (x, y, z)
+
+```scss
+.content{
+  &__wrapper-rotate {
+    transform: rotate3D(1,1,1, 0deg);
+    perspective: 500px;
+    margin: 20px;
+  }
+  &__rotate3d {
+    background-color: #a46; 
+    &:hover {
+      transform: rotate3D(1,1,2, 40deg);
+    }
+  }
+}
+```
+
+### 3D множестренные трансформации
+
+```scss
+.content {
+  &__wrapper-multi {
+    perspective: 500px;
+    margin: 20px;
+  }
+  &__multi3d {
+    background-color: #a53; 
+    &:hover {
+      transform:         
+      translate3d(20px, 20px, 60px)        
+      rotate3D(1,1,2, 40deg);
+    }
+  }
+}   
+```
+
+### Transform style
+
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/transforn-style.gif)
+
+```scss
+//Transform style
+.content {
+  &__wrapper-card {
+    margin: 20px;
+    
+    perspective: 500px;
+    transform-style: preserve-3d;
+  }
+  &__card3d {
+    background-color: #679; 
+    text-align: center;
+    &:hover {
+      transform:rotateX(180deg);
+    }
+  }
+}   
+```
+
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/front-back.gif)
+
+```scss
+//front-back
+ 
+.flip {
+  &__body {    
+    position: relative;
+    width: 120px;
+    height: 120px;
+    transition: all 1.8s ease 0s;
+        
+    perspective: 500px;
+    transform-style: preserve-3d;
+
+    &:hover{
+      transform:rotateY(-180deg);
+    }
+  }
+
+
+  // Расположение тектса на обоих частях
+  &__front, &__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase; 
+    color: #fff;
+
+  }
+  &__front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-color:  #60f; 
+    backface-visibility: hidden; // скрытие обратной стороны
+  }
+  &__back {
+    transform:rotateY(-180deg);
+    background-color: #930;
+  }
+}  
 ```

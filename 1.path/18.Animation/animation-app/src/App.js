@@ -8,10 +8,34 @@ export default class App extends Component {
         <div className="content">
           <div className="path">часть 3</div>
           <div className="content__3D">
-            <div className="content__wrapper3d">
+            <div className="content__wrapper-perspective block">
               <div className="content__perspective block">Perspective</div>
-            </div>
+              </div>
+              <div className="content__wrapper-traslate block">
+                <div className="content__translate3d block">Translate3d</div>
+              </div>       
+              <div className="content__wrapper-scale block">
+                <div className="content__scale3d block">scale 3d</div>
+              </div>     
+              <div className="content__wrapper-rotate block">
+                <div className="content__rotate3d block">rotate 3D</div>
+              </div>
+              <div className="content__wrapper-multi block">
+                <div className="content__multi3d block">3d</div>
+              </div> 
           </div>
+          <div className="content__type-3D ">
+            <div className="content__wrapper-card block">
+              <div className="content__card3d block"><p>Transform<p></p>style</p></div>
+            </div> 
+
+            <div className="flip__body">
+              <div className="flip__front">front</div>
+              <div className="flip__back">back</div>
+            </div>
+ 
+          </div>
+
           <div className="path">часть 2</div>
           <div className="block__translate view-block">Translate</div>
           <div className="block__scale view-block">Scale</div>

@@ -1,13 +1,8 @@
 //-------------------------------------------- ЧАСТЬ 3 ---------------------------------------------
 
- 
-
-.content__3D .content__wrapper3d{
-  background-color: rgba(255, 112, 112, 0.178);
-  width: 150px;
-  height: 150px;
-  perspective-origin: center;
-  perspective: 400px;
+.content__3D {
+  display: flex;
+  justify-content: center;
 }
 
 .block {
@@ -16,39 +11,168 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  text-align: center;
-  transition: all 2.8s ease 0s;
-  width: 150px;
-  height: 150px;
-
-  perspective-origin:center;
-  perspective: 0px;
+  transition: all 1.8s ease 0s;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(255, 221, 221, 0.24)
+  
 }
 
-.content__perspective {
-  background-color: #1a7; 
-  &:hover {
-    transform: rotateX(80deg) ;
+//perspective
+.content{
+  // Родитель для content__perspective block
+  &__wrapper-perspective{
+    perspective-origin: center;
+    perspective: 500px;
+    margin: 10px;
+  }
+
+  // Дочерний от content__wrapper-perspective block
+  &__perspective {
+    background-color: #1a7; 
+    &:hover {
+      transform: rotateX(40deg);
+    }
   }
 }
 
+//traslate
+.content{
+  &__wrapper-traslate{
+    transform: translate3D(0px, 0px, 0px); 
+    perspective: 500px;
+    margin: 10px;
+  }
+
+  &__translate3d {
+    background-color: #00a; 
+    &:hover {  
+      transform: translate3d(20px, 20px, 50px);
+    }
+  }
+}
+
+//scale
+.content{
+  &__wrapper-scale {
+    transform: scale3D(1,1,1);
+    perspective: 500px;
+    margin: 10px;
+  }
+  &__scale3d {
+    background-color: #456; 
+    &:hover {
+      transform: scale3D(-1.2, 1.2,2);
+    }
+  }
+}
+
+//rotate
+.content{
+  &__wrapper-rotate {
+    transform: rotate3D(1,1,1, 0deg);
+    perspective: 500px;
+    margin: 10px;
+  }
+  &__rotate3d {
+    background-color: #a46; 
+    &:hover {
+      transform: rotate3D(1,1,2, 40deg);
+    }
+  }
+}
+
+//multi
+.content {
+  &__wrapper-multi {
+    perspective: 500px;
+    margin: 10px;
+  }
+  &__multi3d {
+    background-color: #a53; 
+    &:hover {
+      transform:         
+      translate3d(20px, 20px, 60px)        
+      rotate3D(1,1,2, 40deg);
+    }
+  }
+}   
 
 
+.content__type-3D {
+  display: flex;
+  justify-content: center;
+  
+  transform: translate(-50%, 30px); // сдвиг относительно центра + left 50%
+  position: relative;   
+  left: 50%;
+  
+}
 
 
+ 
+//Transform style
+.content {
+  &__wrapper-card {
+    margin: 20px;
+    
+    perspective: 500px;
+    transform-style: preserve-3d;
+  }
+  &__card3d {
+    background-color: #679; 
+    text-align: center;
+    &:hover {
+      transform:rotateX(180deg);
+    }
+  }
+}   
+
+//front-back
+ 
+.flip {
+  &__body {    
+    position: relative;
+    width: 120px;
+    height: 120px;
+    transition: all 1.8s ease 0s;
+        
+    perspective: 500px;
+    transform-style: preserve-3d;
+
+    &:hover{
+      transform:rotateY(-180deg);
+    }
+  }
 
 
+  // Расположение тектса на обоих частях
+  &__front, &__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    text-transform: uppercase; 
+    color: #fff;
 
+  }
+  &__front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-color:  #60f; 
+    backface-visibility: hidden; // скрытие обратной стороны
+  }
+  &__back {
+    transform:rotateY(-180deg);
+    background-color: #930;
+  }
 
-
-
-
-
-
-
-
-
+}  
 
 
 
