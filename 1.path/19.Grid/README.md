@@ -2,7 +2,7 @@
 
 # ЧАСТЬ 1
 
-![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/grid.jpg)
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/19.Grid/image/grid.jpg)
 
 ### Transition
 
@@ -37,13 +37,13 @@
   display:inline-grid;
 } 
 ```
-![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/grid-column-row.jpg)
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/19.Grid/image/grid-column-row.jpg)
 ```scss
 display: grid;
 grid-auto-rows:200px 100px; // 2 строки
 grid-template-columns: 200px  150px 300px; // 3 колонки 
 ```
-![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/grid-column-row-fr.jpg)
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/19.Grid/image/grid-column-row-fr.jpg)
 
 - ед.изм. в % и fr
 ```scss
@@ -52,7 +52,7 @@ grid-template-columns: 2fr  1fr 2fr; // 3 колонки  fr 1 1 1 === 33.333%
 ```
 
 - minmax
-![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/18.Animation/image/minmax(auto).gif)
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/19.Grid/image/minmax(auto).gif)
 ```scss
 display: grid;  
 grid-template-columns: 300px minmax(200px, 600px) 300px; // minmax(min, max) 3 колонки
