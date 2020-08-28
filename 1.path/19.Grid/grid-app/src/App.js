@@ -1,0 +1,24 @@
+import React, { Component } from "react";
+import "./App.scss";
+
+export default class App extends Component {
+  render() {
+    return (
+      <div className="wrapper">
+        <div className="content">
+        <h1>Grid-Layout - Определение сетки</h1>
+        <div className="grid">
+          <div className="grid__body">
+            <div className="grid__item">1</div>
+            <div className="grid__item">2</div>
+            <div className="grid__item">3</div>
+            <div className="grid__item">4</div>
+            <div className="grid__item">5</div>
+            <div className="grid__item">6</div>
+          </div>
+        </div>
+        </div>
+      </div>
+    );
+  }
+}
