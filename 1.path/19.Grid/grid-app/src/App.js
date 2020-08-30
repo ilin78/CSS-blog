@@ -17,6 +17,12 @@ export default class App extends Component {
             <div className="grid__item">6</div>
           </div>
         </div>
+        <h2>Имена областей</h2>
+        <div className="grid-wrapper">
+          <header className="grid-header">Шапка</header>
+          <aside className="grid-side">Сайдбар</aside>
+          <main className="grid-content">Контент</main>
+        </div>
         </div>
       </div>
     );

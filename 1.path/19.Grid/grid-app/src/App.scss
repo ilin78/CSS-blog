@@ -25,24 +25,50 @@ body {
 .grid {
   margin-top: 50px;
   max-width: 1200px;
-
   &__body {
     display: grid;  
-    grid-template-columns: 300px minmax(200px, 600px) 300px; // 3 колонки 
-    grid-template-rows: 1fr  1fr; // 2 строки
+    grid-template-columns: repeat(3, 1fr ); // 3 колонки 
+    grid-template-rows: repeat(2, 100px); // 2 строки
     @media(min-width:1530px){
       background-color: #148;
     }
-
     @media(max-width:1110px){
       background-color: #148;
     }
-
   }
 
   &__item {
-    text-align: center; 
+    text-align: center;  
     border: 2px dashed #aaa;
     padding: 30px;
+  }
+}
+
+// Облать вилимости
+
+.grid {
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+      "header header" 
+      "side content"
+    ;
+  }
+  &-header,&-side,&-content { 
+    text-align: center;  
+    border: 2px dashed #aaa;
+    padding: 30px;
+    margin: 10px 0;
+  }
+  &-header {
+    grid-area: header;
+  }
+  &-side {
+    grid-area: side;
+  }
+  &-content {
+    grid-area: content;
   }
 }

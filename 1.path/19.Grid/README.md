@@ -58,3 +58,55 @@ display: grid;
 grid-template-columns: 300px minmax(200px, 600px) 300px; // minmax(min, max) 3 колонки
 grid-template-rows: 1fr  1fr; // 2 строки
 ```
+- fit-content
+
+Ограничение ширины 100px в первой колонке.
+
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/19.Grid/image/fit-content.jpg)
+
+
+```scss
+    display: grid;  
+    grid-template-columns: fit-content(100px) 1fr 1fr; // 3 колонки 
+    grid-template-rows: 1fr  1fr; // 2 строки
+```
+
+- Оптимизация записи
+
+```repeat(3, 1fr );``` равнозначено записи  ```1fr 1fr 1fr;```
+
+```scss
+grid-template-columns: repeat(3, 1fr ); // 3 колонки 
+grid-template-rows: repeat(2, 100px); // 2 строки
+```
+
+- Имена областей ```areas```
+
+```scss
+.grid {
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:        // Схема расположения элементов
+      "header header"       
+      "side content"
+    ;
+  }
+```
+Обозначение области
+```scss
+  &-header {
+    grid-area: header;
+  }
+  &-side {
+    grid-area: side;
+  }
+  &-content {
+    grid-area: content;
+  }
+```
+До и после приминения ```area```
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/19.Grid/image/area.jpg)
+
+ - grid-template
