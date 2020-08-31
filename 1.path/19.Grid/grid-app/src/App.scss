@@ -27,8 +27,10 @@ body {
   max-width: 1200px;
   &__body {
     display: grid;  
-    grid-template-columns: repeat(3, 1fr ); // 3 колонки 
-    grid-template-rows: repeat(2, 100px); // 2 строки
+    grid-template:  repeat(2, 100px) /  repeat(3, 1fr );  // СТРОКИ / КОЛОНКИ
+
+    // grid-template-columns: repeat(3, 1fr ); // 3 колонки 
+    // grid-template-rows: repeat(2, 100px); // 2 строки
     @media(min-width:1530px){
       background-color: #148;
     }
@@ -51,10 +53,15 @@ body {
     display: grid;
     grid-template-columns: 150px 1fr;
     grid-template-rows: 100px 1fr;
-    grid-template-areas: 
-      "header header" 
-      "side content"
-    ;
+
+    grid-template: 
+      [start] "header header" 100px [row2]
+      [row2] "side content" 1fr [row-end] / 150px 1fr;
+
+    // grid-template-areas: 
+    //   "header header" 
+    //   "side content"
+    // ;
   }
   &-header,&-side,&-content { 
     text-align: center;  
@@ -72,3 +79,14 @@ body {
     grid-area: content;
   }
 }
+
+.grid-auto {
+  display: grid;
+  grid-template: 1fr 1fr / repeat(3, 1fr);
+  &__item { 
+    text-align: center;  
+    border: 2px dashed #aaa;
+    padding: 30px;
+  }
+}
+

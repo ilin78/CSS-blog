@@ -86,16 +86,19 @@ grid-template-rows: repeat(2, 100px); // 2 строки
 .grid {
   &-wrapper {
     display: grid;
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 100px 1fr;
-    grid-template-areas:        // Схема расположения элементов
-      "header header"       
-      "side content"
+    grid-template-columns: 150px 1fr; // 2е колонки
+    grid-template-rows: 100px 1fr;    // 2е строки
+    grid-template-areas:  
+      "header header"           //     header 
+      "side content"            // side     content
     ;
   }
-```
-Обозначение области
-```scss
+  &-header,&-side,&-content { 
+    text-align: center;  
+    border: 2px dashed #aaa;
+    padding: 30px;
+    margin: 10px 0;
+  }
   &-header {
     grid-area: header;
   }
@@ -105,8 +108,49 @@ grid-template-rows: repeat(2, 100px); // 2 строки
   &-content {
     grid-area: content;
   }
+}
 ```
 До и после приминения ```area```
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/19.Grid/image/area.jpg)
 
  - grid-template
+ СТРОКИ / КОЛОНКИ
+```
+repeat(<количество>, __px) /  repeat(количество, __px )
+```
+ ```scss
+     display: grid;  
+
+    grid-template:  repeat(2, 100px) /  repeat(3, 1fr );  // РЯДЫ / КОЛОНКИ
+
+    // grid-template-columns: repeat(3, 1fr ); // 3 колонки 
+    // grid-template-rows: repeat(2, 100px); // 2 строки
+  ```
+
+ИМЕНА ОБЛАСТЕЙ
+```
+[start] "<name1> <name1>" __px [row2]
+[start] "<name3> <name4> __px [row-end] / __px __px
+```
+
+```scss
+    grid-template: 
+      [start] "header header" 100px [row2]              //   строки 100px.  [row2]  - конец и начало.
+      [row2] "side content" 1fr [row-end] / 150px 1fr;  //  [row2] "side content" 1fr [row-end] / 150px 1fr;  
+
+    // grid-template-areas: 
+    //   "header header" 
+    //   "side content"
+    // ;
+```
+
+- Неявная сетка
+
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/19.Grid/image/grids.jpg)
+
+для управления необходимо использовать ```grid-auto-rows: __px``` и ```grid-auto-columns: __px``` 
+
+
+- Автоматическое размещение
+
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/19.Grid/image/auto.jpg)
