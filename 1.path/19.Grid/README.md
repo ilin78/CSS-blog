@@ -130,7 +130,7 @@ repeat(<количество>, __px) /  repeat(количество, __px )
 ИМЕНА ОБЛАСТЕЙ
 ```
 [start] "<name1> <name1>" __px [row2]
-[start] "<name3> <name4> __px [row-end] / __px __px
+[start] "<name3> <name4>" __px [row-end] / __px __px
 ```
 
 ```scss
