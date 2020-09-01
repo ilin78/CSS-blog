@@ -148,7 +148,7 @@ repeat(<количество>, __px) /  repeat(количество, __px )
 
 ![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/19.Grid/image/grids.jpg)
 
-для управления необходимо использовать ```grid-auto-rows: __px``` и ```grid-auto-columns: __px``` 
+Для управления 7й ячейки необходимо использовать ```grid-auto-rows: __px``` и ```grid-auto-columns: __px``` 
 
 
 - Автоматическое размещение
