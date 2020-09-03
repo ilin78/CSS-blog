@@ -28,7 +28,9 @@ body {
       display: grid;
       grid-template-rows: [start] 1fr [row] 1fr [row-end];
       grid-template-columns: [start] 1fr [col2] 1fr [col3] 1fr [col-end];
-		}
+      row-gap: 50px;
+      column-gap: 100px;
+    }
 
 		&__elem {
       text-align: center;
@@ -39,15 +41,11 @@ body {
 
 .item {
   &_1 {
-    color: red;
-    background-color: #345;
-    
-    grid-row-start: start;
-    grid-column-start: col3;
+ 
   }
 
   &_2 {
- 
+    
   }
 
   &_3 {

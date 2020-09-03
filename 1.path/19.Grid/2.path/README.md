@@ -157,3 +157,52 @@
 ```
 
 - Выравнивание элементов сетки
+
+```justify-items: stretch;``` - По умолчанию.
+```justify-items: start;``` - Начало.
+```justify-items: end;``` - Конец.
+```justify-items: center;``` - Выравнить поцентру горизонта
+
+```align-items: stretch;``` - По умолчанию.
+```align-items: start;``` - Начало.
+```align-items: end;``` - Конец.
+```align-items: center;``` - Выравнить поцентру по вертикали
+
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/19.Grid/image/items.jpg)
+
+По умолчанию свойства сетки
+```scss
+		&__body {
+      display: grid;
+      justify-items: stretch;  
+      align-items: stretch; 
+    }
+``` 
+А свойства элементов заполняют всю ячейку
+```scss
+.item {
+  &_1 {
+    color: red;
+    background-color: #345;
+    align-self: stretch;
+    justify-self: stretch;
+  }
+  ...
+}
+```
+
+- Выравнивание расстояния между элементами
+
+Можно задавать ```gap: 20px;```  или по отдельности (в примере ниже)
+```scss
+		&__body {
+      display: grid;
+      grid-template-rows: [start] 1fr [row] 1fr [row-end];
+      grid-template-columns: [start] 1fr [col2] 1fr [col3] 1fr [col-end];
+      row-gap: 50px;
+      column-gap: 100px;
+    }
+```
+
+
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/19.Grid/image/gap.jpg)
