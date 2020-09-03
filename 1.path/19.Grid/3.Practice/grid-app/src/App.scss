@@ -1,8 +1,5 @@
 body {
-  background-color: #456;
-  font-size: 20px;
-  font-weight: 500;
-  transition: all 1.8s ease 0s;
+ transition: all 1.8s ease 0s;
 }
 .wrapper {  
   display: flex;
@@ -10,83 +7,18 @@ body {
   overflow: hidden;
   height: 100%;
   padding: 150px;
-  color: #fff;
-  h1{
-    font-size: 30px;
-    font-weight: 400;
-  } 
+ 
+
 }
 
 .content {    
  
 }
 
-
-.grid {
-  margin-top: 50px;
-  max-width: 1200px;
-  &__body {
-    display: grid;  
-    grid-template:  repeat(2, 100px) /  repeat(3, 1fr );  // СТРОКИ / КОЛОНКИ
-
-    // grid-template-columns: repeat(3, 1fr ); // 3 колонки 
-    // grid-template-rows: repeat(2, 100px); // 2 строки
-    @media(min-width:1530px){
-      background-color: #148;
-    }
-    @media(max-width:1110px){
-      background-color: #148;
-    }
-  }
-
-  &__item {
-    text-align: center;  
-    border: 2px dashed #aaa;
-    padding: 30px;
-  }
+.header__logo {
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  overflow: hidden;
 }
-
-// Облать вилимости
-
-.grid {
-  &-wrapper {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 100px 1fr;
-
-    grid-template: 
-      [start] "header header" 100px [row2]
-      [row2] "side content" 1fr [row-end] / 150px 1fr;
-
-    // grid-template-areas: 
-    //   "header header" 
-    //   "side content"
-    // ;
-  }
-  &-header,&-side,&-content { 
-    text-align: center;  
-    border: 2px dashed #aaa;
-    padding: 30px;
-    margin: 10px 0;
-  }
-  &-header {
-    grid-area: header;
-  }
-  &-side {
-    grid-area: side;
-  }
-  &-content {
-    grid-area: content;
-  }
-}
-
-.grid-auto {
-  display: grid;
-  grid-template: 1fr 1fr / repeat(3, 1fr);
-  &__item { 
-    text-align: center;  
-    border: 2px dashed #aaa;
-    padding: 30px;
-  }
-}
-
