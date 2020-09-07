@@ -1,24 +1,175 @@
-body {
- transition: all 1.8s ease 0s;
+.wrapper {
+  min-height: 100vh; // Оболочка на всю высоту экрана
+  display: grid;
+  /* 
+  Выстраиваем сетку РЯДЫ (в нашем случае 1й ряд это шапка - минимум 100рх и максиальное auto) 
+  далее идет тэг <main> - ему устанавливаем 1fr чтобы он занимал оставшееся пространство, таким 
+  образом мы будем прибивать  к низу <footer> minmax(70px, auto), даже если контента будет мало
+  / -этот символ говорит что дальше идет обращение к КОЛОНКАМ. Колонка 1 - поэтому будет 1fr.
+  */
+  grid-template-rows: 
+  	minmax(100px, auto) // <header>
+  	1fr 				// <main>
+  	minmax(70px, auto);	// <footer>
+  grid-template-columns: 1fr;
+  // Далее применим названия к GRID-элементам, чтобы было ясно что происходит
+  grid-template-areas: 
+	"header"
+	"main"
+	"footer "
+  ;
+  background-color: #ccc;
 }
-.wrapper {  
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  height: 100%;
-  padding: 150px;
+.header {
+	grid-area: header;
+	background-color: #afd;
+	padding: 15px;
+	display: grid;
+	align-items: center;
+	grid-template: 
+								// Высота строки
+		1fr
+		/  						// Ширина колонки
+		1fr 
+		minmax(auto, 300px) 	// ширина min - auto max - 300px
+		minmax(auto, 1100px) 	// Ячейка меню
+		1fr 					// Автозаполнение
+	; 
+		&__logo {
+			width: 70px;
+			height: 70px;
+			border-radius : 50%;
+			background-color: #fff;
+			grid-column: 2/3;
+		}
+
+		&__menu {
+			grid-column: 3/4;
+		}
+
+		&__list {
+			display: grid;
+			grid-auto-flow: column; // Таким образом шапка меню бара будет выстроена в линию
+			justify-items: end;		// элементы выстроются по левому краю
+		}		
+		&__list li{
+			
+		}
  
+		&__link {
+			font-weight: 600;
+			color: #585;
+			font-size: 18px;
+		}
 
+		&__burger {
+		}
+}
+.main {
+	grid-area:main;
+	padding: 30px 15px;
+	display: grid;
+
+	grid-template: 
+								// Высота строки
+		1fr
+		/  						// Ширина колонки
+		1fr 
+		minmax(auto, 300px) 	// ширина min - auto max - 300px
+		minmax(auto, 1100px) 	// Ячейка меню
+		1fr 					// Автозаполнение
+	; 
+}
+.sidebar {
+	grid-column: 2/3;
+	background-color: #aff;
+	padding: 30px 15px; 
+		&__menu {
+		}
+
+		&__list {
+		}
+		&__list li{
+			margin: 0px 0px 15px 0px;
+		}
+
+		&__link {
+			color: #585;
+		}
+}
+.content {
+	grid-column: 3/4;
+	padding: 0px 0px 0px 30px;
+		&__title {
+		}
+
+		&__gallary {
+		}
+
+		&__products {
+		}
+}
+.gallary {
+
+		&_item {
+			position: relative;	// пропорциональное уменьшение картинки из-за измнения ширины
+			padding: 0px 0px 85% 0px;
+		}
+
+		&_item img {			// адаптирование картинок
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+
+		&__title {
+		}
+
+		&__items {
+			display: grid;
+			gap: 10px;			// Отступ между GRID-элементами
+			
+			// построение сетки для галлереи чтобы при уменьшении ширины автоматически перестраивались на ряд ниже
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+		}
+
+		&__item {
+		}
+}
+img {
+  width: 250px;
 }
 
-.content {    
- 
-}
+.products {
 
-.header__logo {
-  width: 120px;
-  height: 120px;
-  border: 1px solid rgba(255, 255, 255, 0);
-  border-radius: 50%;
-  overflow: hidden;
+		&__title {
+		}
+
+		&__items {
+		}
+
+		&__item {
+		}
+
+		&__image {
+		}
+
+		&__name {
+		}
+
+		&__button {
+		}
+}
+.footer {
+	grid-area:footer;
+    background-color: #afd;
+		&__copy {
+		}
+
+		&__text {
+		}
 }
