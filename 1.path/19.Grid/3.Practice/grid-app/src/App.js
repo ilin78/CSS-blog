@@ -70,35 +70,35 @@ export default class App extends Component {
             <section class="content__gallary gallary">
               <h2 class="gallary__title">Галерея</h2>
               <div class="gallary__items">
-                <div class="gallary__item gallary_item_big">
-                  <img class="width" src={img_01} alt="" ></img>
+                <div class="gallary__item gallary__item_big">
+                  <img src={img_01} alt="" ></img>
                 </div>
-                <div class="gallary__item gallary_item_big">
-                  <img class="width" src={img_02} alt="" ></img>
+                <div class="gallary__item">
+                  <img src={img_02} alt="" ></img>
                 </div>
-                <div class="gallary__item gallary_item_big">
-                  <img class="width" src={img_03} alt="" ></img>
+                <div class="gallary__item">
+                  <img src={img_03} alt="" ></img>
                 </div>
-                <div class="gallary__item gallary_item_big">
-                  <img class="width" src={img_04} alt="" ></img>
+                <div class="gallary__item">
+                  <img  src={img_04} alt="" ></img>
                 </div>
-                <div class="gallary__item gallary_item_big">
-                  <img class="width" src={img_05} alt="" ></img>
+                <div class="gallary__item">
+                  <img  src={img_05} alt="" ></img>
                 </div>
-                <div class="gallary__item gallary_item_big">
-                  <img class="width" src={img_06} alt="" ></img>
+                <div class="gallary__item">
+                  <img src={img_06} alt="" ></img>
                 </div>
-                <div class="gallary__item gallary_item_big">
-                  <img class="width" src={img_07} alt="" ></img>
+                <div class="gallary__item">
+                  <img src={img_07} alt="" ></img>
                 </div>
-                <div class="gallary__item gallary_item_big">
-                  <img class="width" src={img_08} alt="" ></img>
+                <div class="gallary__item gallary__item_big">
+                  <img src={img_08} alt="" ></img>
                 </div>
-                <div class="gallary__item gallary_item_big">
-                  <img class="width" src={img_09} alt="" ></img>
+                <div class="gallary__item">
+                  <img src={img_09} alt="" ></img>
                 </div>
-                <div class="gallary__item gallary_item_big">
-                  <img class="width" src={img_10} alt="" ></img>
+                <div class="gallary__item">
+                  <img src={img_10} alt="" ></img>
                 </div>
               </div>
               </section>
@@ -107,25 +107,21 @@ export default class App extends Component {
                 <div class="products__items">
                   <div class="products__item">
                     <a class="products__image">
-                      <img  class="width" src={img_fls} alt="" ></img>
+                      <img  src={img_fls} alt=""></img>
+                    </a>
+                    <a href="" class="products__name">Мы нацелены попасть в центр!Мы нацелены попасть в центр!Мы нацелены попасть в центр!Мы нацелены попасть в центр!Мы нацелены попасть в центр!</a>
+                    <a href="" class="products__button">Присоединиться</a>
+                  </div>
+                  <div class="products__item">
+                    <a class="products__image">
+                      <img  src={img_fls} alt="" ></img>
                     </a>
                     <a href="" class="products__name">Мы нацелены попасть в центр!</a>
                     <a href="" class="products__button">Присоединиться</a>
                   </div>
-                </div>
-                <div class="products__items">
                   <div class="products__item">
                     <a class="products__image">
-                      <img  class="width" src={img_fls} alt="" ></img>
-                    </a>
-                    <a href="" class="products__name">Мы нацелены попасть в центр!</a>
-                    <a href="" class="products__button">Присоединиться</a>
-                  </div>
-                </div>
-                <div class="products__items">
-                  <div class="products__item">
-                    <a class="products__image">
-                      <img  class="width" src={img_fls} alt="" ></img>
+                      <img  src={img_fls} alt="" ></img>
                     </a>
                     <a href="" class="products__name">Мы нацелены попасть в центр!</a>
                     <a href="" class="products__button">Присоединиться</a>
