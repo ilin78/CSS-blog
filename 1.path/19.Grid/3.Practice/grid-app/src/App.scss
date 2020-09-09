@@ -54,7 +54,7 @@
 			justify-items: end;		// элементы выстроются по левому краю
 		}		
 		&__list li{
-			
+			margin: 0px 0px 0px 30px; // Чтобы точки (*) не попадали на соседнюю область
 		}
  
 		&__link {
@@ -68,8 +68,11 @@
 }
 //-------------------------------------------------------------------------------main
 .main {
-	grid-area:main;
 	padding: 30px 15px;
+	// Подход Mobile FIRST преносим в media (Чтобы не запутать тебя, я специально вынесу этот код в нижний блок :)  )
+	/*
+	grid-area:main;
+
 	display: grid;
 
 	grid-template: 
@@ -80,12 +83,13 @@
 		minmax(auto, 300px) 	// ширина min - auto max - 300px
 		minmax(auto, 1100px) 	// Ячейка меню
 		1fr 					// Автозаполнение
-	; 
+	; */
 }
 .sidebar {
-	grid-column: 2/3;
+	// grid-column: 2/3; <-- Строку переносим в @media для Mobile FIRST 
 	background-color: #aff;
 	padding: 30px 15px; 
+	margin: 0px 0px 30px 0px;
 		&__menu {
 		}
 
@@ -100,8 +104,8 @@
 		}
 }
 .content {
-	grid-column: 3/4;
-	padding: 0px 0px 0px 30px;
+	// grid-column: 3/4;    			<-- Переносим в @media чтобы регулировать отступ
+	// padding: 0px 0px 0px 30px;		<--
 		&__title {
 		}
 
@@ -129,8 +133,8 @@
 		}
 		
 		&__item_big {
-				grid-column: span 2; // Сколько ячеек отдается этому объекту
-				grid-row: span 2;
+				// grid-column: span 2; // Сколько ячеек отдается этому объекту 	<-- Отправляем эти строки в @media 767px
+				// grid-row: span 2;												<--
 			
 		}
 
@@ -217,6 +221,9 @@
 	1fr						// ширина 4й колонки растягивается аватоматически
 	;
 	align-items: center; 	// выставить все содержимое по центру
+
+	// Изменим этот вид на ширине меньше при 550px (Перенесем этот код в @media)
+	/*
 	&__copy {
 		grid-column: 2/3;
 	}
@@ -224,5 +231,117 @@
 	&__text {
 		text-align: right; // разместить текст справа внутри ячейки
 		grid-column: 3/4;	
+	} 
+	*/
+}
+
+
+// ---------------------------------------------------------------------- Mobile FIRST
+
+@media (min-width: 992px) {
+	// Вот сюда, со строки 72
+	.main {
+		grid-area:main;
+
+		display: grid;
+	
+		grid-template: 
+									// Высота строки
+			1fr
+			/  						// Ширина колонки
+			1fr 
+			minmax(auto, 300px) 	// ширина min - auto max - 300px
+			minmax(auto, 1100px) 	// Ячейка меню
+			1fr 					// Автозаполнение
+		; 
 	}
+	.sidebar {
+		grid-column: 2/3;
+		margin: 0px 0px 0px 0px;
+	}
+	.content {
+		grid-column: 3/4;
+		padding: 0px 0px 0px 30px;
+	}
+}
+
+
+@media (min-width: 767px) { 
+	.gallary {			
+		&__item_big { // пояснение, поскольку на маленьком экране выступает справа, то убираем  этот эффект 
+			grid-column: span 2; // Сколько ячеек отдается этому объекту 	 
+			grid-row: span 2;
+		}
+	}
+}
+
+// Изменяем FOOTER
+// Если больше 550px то оставить по сторонам
+@media (min-width: 550px) {
+	.footer {
+		&__copy {
+			grid-column: 2/3;
+		}
+	
+		&__text {
+			text-align: right; // разместить текст справа внутри ячейки
+			grid-column: 3/4;	
+		} 
+	}
+}
+// Если меньше 550px то оставить по сторонам
+@media (max-width: 550px) {
+	.footer {
+		grid-template: 1fr 1fr / 1fr ; // 2 строки и 1 колонка
+		text-align: center;
+		&__copy {
+			order: 2;
+		}
+		&__text {
+			order: 1;
+		}
+	}
+
+}
+
+
+// Убираем меню в бургер на всех экранах меньше 992px 
+
+@media (max-width: 992px) {
+	// Три белые полоски
+	.header {
+		&__list {
+			display: none;
+		}
+		&__burger {
+			width: 30px;
+			display: grid;
+			align-items: center;
+			grid-template: repeat(3, 8px) / 1fr;
+		}
+		&__burger::before {
+			content: "";
+			height: 2px;
+			width: 30px;
+			background-color: #fff;
+		}
+		&__burger::after {
+			content: "";
+			height: 2px;
+			width: 30px;
+			background-color: #fff;
+		}
+		&__burger span {
+			content: "";
+			height: 2px;
+			width: 30px;
+			background-color: #fff;
+		}
+		// Размещаем объект
+		&__menu {
+			display: grid;
+			justify-items: end;
+		}
+	}
+
 }
