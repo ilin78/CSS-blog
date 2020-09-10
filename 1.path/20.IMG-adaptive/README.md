@@ -65,7 +65,7 @@
          </section>
 ```
 
-![](https://github.com/dedmosay/CSS-blog/tree/master/1.path/20.IMG-adaptive/image/simple.jpg)
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/20.IMG-adaptive/image/simple.jpg)
 
 Как видно, картинки сжались и изображение стало искажаться под формат выбранный ```height: 200px;``` по высоте и заполнению   ```width: 100%; height: 100%;```
 
@@ -86,7 +86,8 @@ object-fit: fill;
 ```scss
 object-fit: contain;
 ```
-![](https://github.com/dedmosay/CSS-blog/tree/master/1.path/20.IMG-adaptive/image/contain.jpg)
+ 
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/20.IMG-adaptive/image/contain.jpg)
 
 #### none
 
@@ -96,7 +97,7 @@ object-fit: contain;
 ```scss
 object-fit: none;
 ```
-![](https://github.com/dedmosay/CSS-blog/tree/master/1.path/20.IMG-adaptive/image/none.jpg)
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/20.IMG-adaptive/image/none.jpg)
 
 #### cover
 
@@ -105,7 +106,7 @@ object-fit: none;
 ```scss
 object-fit: cover;
 ```
-![](https://github.com/dedmosay/CSS-blog/tree/master/1.path/20.IMG-adaptive/image/cover.gif)
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/20.IMG-adaptive/image/cover.gif)
 
 
 ## object-position 
@@ -139,7 +140,7 @@ object-fit: cover;
 
 Картинки имеют фиксированный размер при этом отзывчивы при изменении размера сторон
 
-![](https://github.com/dedmosay/CSS-blog/tree/master/1.path/20.IMG-adaptive/image/cover_and_position.gif)
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/20.IMG-adaptive/image/cover_and_position.gif)
 
 ## Картинка в карточке.
 
@@ -223,7 +224,7 @@ object-fit: cover;
 
 Если применить ```max-width:100%``` то все будет более менее ровно, однако если ширина меньше 500px то будет промежуток. Как это исправить см. далее.
 
-![](https://github.com/dedmosay/CSS-blog/tree/master/1.path/20.IMG-adaptive/image/max-width.jpg)
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/20.IMG-adaptive/image/max-width.jpg)
 
 
 ### Применим свойство к object-fit данному примеру
@@ -255,7 +256,7 @@ object-fit: cover;
 ```
 
 
-![](https://github.com/dedmosay/CSS-blog/tree/master/1.path/20.IMG-adaptive/image/cover.jpg)
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/20.IMG-adaptive/image/cover.jpg)
 
 При этом может возникнуть ситуация когда текста меньше чем нужно картинке, тогда чтобы обезопасить себя от этого можно добавить ```min-height```.
 
@@ -266,4 +267,4 @@ object-fit: cover;
         min-height: 300px;
     }
 ```
-![](https://github.com/dedmosay/CSS-blog/tree/master/1.path/20.IMG-adaptive/image/min-height.jpg)
+![](https://github.com/dedmosay/CSS-blog/blob/master/1.path/20.IMG-adaptive/image/min-height.jpg)
