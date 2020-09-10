@@ -42,7 +42,7 @@ export default class App extends Component {
                     <img src={img_800x400}></img>
                   </div>
                   <div class="cards__body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  
                   </div>
                 </div>
               </div>
@@ -68,6 +68,44 @@ export default class App extends Component {
                 </div>
               </div>
             </div>
+         </section>
+         <section class="items">
+          <div class="items__title title">
+            <div class="items__item">
+              <div class="items__image"> 
+                <img src={img_1300x400}></img>
+              </div>
+              <div class="items__body">
+                <div class="items__label">Заголовок</div>
+                <div class="items__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </div>
+              </div>
+            </div>
+            <div class="items__item">
+              <div class="items__image"> 
+                <img src={img_400x600}></img>
+              </div>
+              <div class="items__body">
+                <div class="items__label">Заголовок</div>
+                <div class="items__text">
+                </div>
+              </div>
+            </div>
+            <div class="items__item">
+              <div class="items__image"> 
+                <img src={img_800x400}></img>
+              </div>
+              <div class="items__body">
+                <div class="items__label">Заголовок</div>
+                <div class="items__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </div>
+              </div>
+            </div>
+          </div>
          </section>
        </div>
     );
